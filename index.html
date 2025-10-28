@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LStar Solutions — Portfolio</title>
+  <meta name="description" content="Portfolio de LStar Solutions — Projets, compétences et contact." />
+  <meta property="og:title" content="LStar Solutions — Portfolio" />
+  <meta property="og:description" content="Projets, compétences et contact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://klxtech.com" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" as="image" href="assets/cover.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="main.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "LStar Solutions",
+    "url": "https://klxtech.com",
+    "sameAs": ["https://github.com/your-github", "https://www.linkedin.com/in/your-linkedin/"],
+    "jobTitle": "Développeur & Consultant Logiciel"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Aller au contenu</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">★</span>
+        <span class="brand-text">LStar Solutions</span>
+      </div>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="#projects">Projets</a>
+        <a href="#about">À propos</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" class="btn btn-ghost" aria-label="Basculer clair/sombre">🌓</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>Des solutions logicielles <span class="underline">simples</span>, <span class="underline">scalables</span>, <span class="underline">efficaces</span>.</h1>
+        <p class="lede">Je conçois et développe des applications web, APIs et dashboards data‑driven. Focus sur la qualité, la performance et la maintenance.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#projects">Voir les projets</a>
+          <a class="btn btn-ghost" href="#contact">Me contacter</a>
+        </div>
+        <ul class="hero-meta">
+          <li>Angular • C#/.NET • SQL Server</li>
+          <li>ETL CSV • KPI • ApexCharts</li>
+          <li>Node.js • MongoDB • DevOps léger</li>
+        </ul>
+      </div>
+      <div class="hero-art">
+        <img src="assets/cover.svg" alt="Illustration abstraite LStar Solutions" />
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <div class="section-head">
+        <h2>Projets récents</h2>
+        <div class="filters">
+          <input id="search" type="search" placeholder="Rechercher un projet…" aria-label="Rechercher un projet" />
+        </div>
+      </div>
+      <div id="projectsGrid" class="grid"></div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>À propos</h2>
+      <div class="about">
+        <p>Développeur full‑stack et consultant. J’aide les entreprises à passer de l’idée au produit avec une approche pragmatique, centrée sur la valeur. Habitué aux environnements data (ETL, KPIs, dashboards), migrations front Angular, backends .NET performants, et intégrations industrielles.</p>
+        <ul class="badges">
+          <li>Freelance</li>
+          <li>Disponible sur devis</li>
+          <li>Remote/Présentiel Toulouse</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <div class="contact">
+        <p>Un projet en tête ? Écrivez‑moi, on en parle.</p>
+        <p><a class="btn" href="mailto:contact@klxtech.com">contact@klxtech.com</a></p>
+        <div class="links">
+          <a href="https://github.com/your-github" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/your-linkedin/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> LStar Solutions — Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+</html>
